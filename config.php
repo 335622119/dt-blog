@@ -1,12 +1,12 @@
 <?php
 //mysql database address
-define('DB_HOST','qdm11457486.my3w.com');
+define('DB_HOST','tcp://10.10.26.58:3306');
 //mysql database user
-define('DB_USER','qdm11457486');
+define('DB_USER','uBinFa7UthIrXHeg');
 //database password
-define('DB_PASSWD','12345678');
+define('DB_PASSWD','p87k0xYmbzoUdjReQ');
 //database name
-define('DB_NAME','qdm11457486_db');
+define('DB_NAME','8XDtVudjl6QhBbA1');
 //database prefix
 define('DB_PREFIX','emlog_');
 //auth key
