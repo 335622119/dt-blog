@@ -1,0 +1,62 @@
+[ 2016-07-01T16:13:14+08:00 ] 61.149.182.106 /dh/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001979s ]
+SQL: SHOW COLUMNS FROM `cc_tags` [ RunTime:0.001144s ]
+SQL: SELECT tags.id,tags.name,tags.alias,tags_type.icon,tags_type.id AS tags_type_id FROM cc_tags tags INNER JOIN cc_tags_type tags_type ON tags.id=tags_type.tags_id WHERE tags_type.type=2 AND tags_type.tags_pid=0 ORDER BY tags_type.sort_order DESC [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `cc_link` [ RunTime:0.000958s ]
+SQL: SELECT * FROM `cc_link` ORDER BY sort_order DESC  [ RunTime:0.000544s ]
+NOTIC: [8] Undefined variable: setting /data/home/qxu1141780211/htdocs/dh/Home/Lib/Action/CommonAction.class.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1141780211/htdocs/dh/Home/Lib/Action/CommonAction.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cc_item` [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `cc_tags_type` [ RunTime:0.000846s ]
+SQL: SELECT tags.id,tags.name,tags.alias FROM cc_tags_type tags_type INNER JOIN cc_tags tags ON tags_type.tags_id=tags.id WHERE tags_type.tags_pid=1 ORDER BY tags_type.sort_order DESC,tags.id ASC [ RunTime:0.000641s ]
+SQL: SELECT item.title,item.url,item.icon,item.description,item.is_hot FROM cc_item item INNER JOIN cc_tags_relationship tags_relationship ON item.id=tags_relationship.item_id WHERE item.status=1 AND tags_relationship.tags_type_id=1 ORDER BY item.sort_order DESC,item.id ASC LIMIT 100 [ RunTime:0.001756s ]
+SQL: SELECT tags.id,tags.name,tags.alias FROM cc_tags_type tags_type INNER JOIN cc_tags tags ON tags_type.tags_id=tags.id WHERE tags_type.tags_pid=2 ORDER BY tags_type.sort_order DESC,tags.id ASC [ RunTime:0.000602s ]
+SQL: SELECT item.title,item.url,item.icon,item.description,item.is_hot FROM cc_item item INNER JOIN cc_tags_relationship tags_relationship ON item.id=tags_relationship.item_id WHERE item.status=1 AND tags_relationship.tags_type_id=2 ORDER BY item.sort_order DESC,item.id ASC LIMIT 100 [ RunTime:0.000929s ]
+SQL: SELECT tags.id,tags.name,tags.alias FROM cc_tags_type tags_type INNER JOIN cc_tags tags ON tags_type.tags_id=tags.id WHERE tags_type.tags_pid=3 ORDER BY tags_type.sort_order DESC,tags.id ASC [ RunTime:0.000593s ]
+SQL: SELECT item.title,item.url,item.icon,item.description,item.is_hot FROM cc_item item INNER JOIN cc_tags_relationship tags_relationship ON item.id=tags_relationship.item_id WHERE item.status=1 AND tags_relationship.tags_type_id=3 ORDER BY item.sort_order DESC,item.id ASC LIMIT 100 [ RunTime:0.000976s ]
+NOTIC: [8] Undefined variable: tags /data/home/qxu1141780211/htdocs/dh/Home/Lib/Action/IndexAction.class.php 第 42 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: kw /data/home/qxu1141780211/htdocs/dh/Public/Cache/Home/Cache/71dd44981c432497b93df8298e17de70.php 第 49 行.
+NOTIC: [8] Undefined variable: actionName /data/home/qxu1141780211/htdocs/dh/Public/Cache/Home/Cache/71dd44981c432497b93df8298e17de70.php 第 63 行.
+NOTIC: [8] Undefined variable: actionName /data/home/qxu1141780211/htdocs/dh/Public/Cache/Home/Cache/71dd44981c432497b93df8298e17de70.php 第 63 行.
+NOTIC: [8] Undefined variable: actionName /data/home/qxu1141780211/htdocs/dh/Public/Cache/Home/Cache/71dd44981c432497b93df8298e17de70.php 第 63 行.
+SQL: SHOW COLUMNS FROM `cc_advert` [ RunTime:0.001509s ]
+SQL: SELECT * FROM `cc_advert` WHERE ( status=1 ) ORDER BY sort_order desc  [ RunTime:0.000568s ]
+SQL: SELECT `id`,`title`,`url`,`icon`,`logo`,`description` FROM `cc_item` WHERE ( status=1 AND logo!='' ) ORDER BY is_hot desc,sort_order desc,id asc LIMIT 27   [ RunTime:0.001000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025502s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000712s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000437s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000304s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002091s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000568s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2016-07-01T16:13:25+08:00 ] 61.149.182.106 /dh/?a=click
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000525s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001782s ]
+SQL: SHOW COLUMNS FROM `cc_tags` [ RunTime:0.001020s ]
+SQL: SELECT tags.id,tags.name,tags.alias,tags_type.icon,tags_type.id AS tags_type_id FROM cc_tags tags INNER JOIN cc_tags_type tags_type ON tags.id=tags_type.tags_id WHERE tags_type.type=2 AND tags_type.tags_pid=0 ORDER BY tags_type.sort_order DESC [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `cc_link` [ RunTime:0.000830s ]
+SQL: SELECT * FROM `cc_link` ORDER BY sort_order DESC  [ RunTime:0.000378s ]
+NOTIC: [8] Undefined variable: setting /data/home/qxu1141780211/htdocs/dh/Home/Lib/Action/CommonAction.class.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1141780211/htdocs/dh/Home/Lib/Action/CommonAction.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cc_item` [ RunTime:0.000848s ]
+SQL: UPDATE `cc_item` SET `click`=click+1 WHERE ( `url` = 'http://ued.taobao.com/blog/' ) [ RunTime:0.000763s ]
+
+[ 2016-07-01T16:13:32+08:00 ] 61.149.182.106 /dh/?a=click
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001782s ]
+SQL: SHOW COLUMNS FROM `cc_item` [ RunTime:0.001201s ]
+SQL: UPDATE `cc_item` SET `click`=click+1 WHERE ( `url` = 'http://www.cyzone.cn/' ) [ RunTime:0.000732s ]
+

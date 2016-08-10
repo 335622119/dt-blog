@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简约时尚网页右侧带返回顶部的jQuery客服代码 - 素材家园（www.sucaijiayuan.com）</title>
+<link type="text/css" rel="Stylesheet" href="css/densigner_contest.css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<style>
+body{height:2000px;}
+</style>
+</head>
+<body>
+<div class="c_meau">
+  <div class="fl">
+    <h4>关注&amp;咨询<br>
+      素材家园</h4>
+    <div class="fl_o">
+      <dl class="fl_o_o">
+        <dt> <a href="tencent://message/?uin=954502368&amp;Site=www.sucaijiayuan.com&amp;Menu=yes" target="_blank"> <img src="images/c_meau_1.png"></a></dt>
+        <dd>QQ咨询</dd>
+      </dl>
+      <dl class="fl_o_o">
+        <dt> <a href="http://weibo.com/97zzw" target="_blank"> <img src="images/c_meau_2.png"> </a> </dt>
+        <dd>新浪微博</dd>
+      </dl>
+      <dl class="fl_o_o">
+        <dt><img src="images/c_meau_3.png"></dt>
+        <dd>微信公众号</dd>
+      </dl>
+      <dl class="fl_o_o">
+        <dt><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/c_meau_7.gif"></a></dt>
+        <dd>建站帮助</dd>
+      </dl>
+    </div>
+    <img src="images/c_meau_7.png"> </div>
+  <div class="fr">
+    <div class="fr_o"><img src="images/c_meau_5.png"></div>
+    <div class="fr_t"><img src="images/c_meau_6.png"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<script type="text/javascript">
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $(".c_meau").stop().show().animate({ bottom: '100px' }, 300);
+        }
+        else {
+            $(".c_meau").stop().animate({ bottom: '-430px' }, 300);
+        }
+    });
+    $('.c_meau .fr_t').click(function () {
+        $('body,html').animate({ scrollTop: 0 }, 500);
+        $(".c_meau").animate({ bottom: '-380px', opacity: '0' }, 500);
+        return false;
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="keywords" content="XDans,html格式化,html压缩,js格式化,js压缩" />
+<meta name="description" content="XDans最好用博客分享网" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>
+      XDans最好用的博客网-JS/HTML格式化
+    </title>
+    <script type="text/javascript" src="./public/jshtml/js/jquery.js">
+    </script>
+    <script type="text/javascript" src="./public/jshtml/js/ajax.js">
+    </script>
+    <script type="text/javascript" src="./public/jshtml/js/mail.js">
+    </script>
+  </head>
+  
+  <body>
+    <div>
+      <div class="title clearfix" style="margin:6px 0">
+        <div id="copyurl" class="fr">
+        </div>
+      </div>
+      <script type="text/javascript" src="./public/jshtml/js/base2-p.js">
+      </script>
+      <script type="text/javascript" src="./public/jshtml/js/packer-p.js">
+      </script>
+      <script type="text/javascript" src="./public/jshtml/js/beautify.js">
+      </script>
+      <script type="text/javascript" src="./public/jshtml/js/beautify-tests.js">
+      </script>
+      <script type="text/javascript" src="./public/jshtml/js/HTML-Beautify.js">
+      </script>
+      <script type="text/javascript">
+        function do_js_beautify() {
+          document.getElementById('beautify').disabled = true;
+          js_source = document.getElementById('content').value.replace(/^\s+/, '');
+          tabsize = document.getElementById('tabsize').value;
+          tabchar = ' ';
+          if (tabsize == 1) {
+            tabchar = '\t';
+          }
+          if (js_source && js_source.charAt(0) === '<') {
+            document.getElementById('content').value = style_html(js_source, tabsize, tabchar, 80);
+          } else {
+            document.getElementById('content').value = js_beautify(js_source, tabsize, tabchar);
+          }
+          document.getElementById('beautify').disabled = false;
+          return false;
+        }
+        function pack_js(base64) {
+          var input = document.getElementById('content').value;
+          var packer = new Packer;
+          if (base64) {
+            var output = packer.pack(input, 1, 0);
+          } else {
+            var output = packer.pack(input, 0, 0);
+          }
+          document.getElementById('content').value = output;
+        }
+        function copy(txt) {
+          if (window.clipboardData) {
+            window.clipboardData.setData("Text", txt);
+          } else {
+            txt = encodeURIComponent(txt);
+            var flashcopier = 'flashcopier';
+            if (!document.getElementById(flashcopier)) {
+              var divholder = document.createElement('div');
+              divholder.id = flashcopier;
+              document.body.appendChild(divholder);
+            }
+            document.getElementById(flashcopier).innerHTML = '';
+            var divinfo = '<embed src="<!--./public/jshtml/js/clipboard.swf-->" flashvars="clipboard=' + txt + '" type="application/x-shockwave-flash" width="0" height="0"></embed>';
+            document.getElementById(flashcopier).innerHTML = divinfo;
+          }
+          alert("复制成功");
+        }
+      </script>
+      <div id="result">
+        <h5 class="title">
+          <span class="text">
+            <em class="icon1">
+            </em>
+            XDans最好用的博客网-JS/HTML格式化
+          </span>
+        </h5>
+        <div class="box">
+          <div class="con">
+            <form method="post" action="?">
+              <p>
+                <select name="tabsize" id="tabsize">
+                  <option value="1">
+                    制表符缩进
+                  </option>
+                  <option value="2" selected="selected">
+                    2个空格缩进
+                  </option>
+                  <option value="4">
+                    4个空格缩进
+                  </option>
+                  <option value="8">
+                    8个空格缩进
+                  </option>
+                </select>
+                <button onclick="return do_js_beautify()" id="beautify">
+                  格式化
+                </button>
+                <input type="button" value="普通压缩" onclick="pack_js(0)">
+                <input type="button" value="加密压缩" onclick="pack_js(1)">
+                <input type="button" value="复制" onclick="copy($('#content').val())">
+              </p>
+              <p>
+                <textarea rows="20" cols="20" style="width:90%" name="content" id="content"><html><body><h1>i like xdans</h1><p>css js html</p></body></html></textarea>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

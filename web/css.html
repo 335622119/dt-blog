@@ -1,0 +1,116 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>XDans最好用的博客网-CSS整理工具-CSS格式化工具</title>
+<meta http-equiv="x-ua-compatible" content="IE=7">
+<meta name="keywords" content="XDans,css格式化,css压缩" />
+<meta name="description" content="XDans最好用博客分享网" />
+
+<link rel="stylesheet" href="./CSS整理工具-CSS代码格式化工具_files/default.css" type="text/css">
+<script id="b5mmain" type="text/javascript" charset="utf-8" src="./CSS整理工具-CSS代码格式化工具_files/b5m.main.js"></script><script src="./CSS整理工具-CSS代码格式化工具_files/logger.js"></script><link href="./CSS整理工具-CSS代码格式化工具_files/bdsstyle.css" rel="stylesheet" type="text/css"></head>
+<body>
+<div class="twidth">
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="Tabwidth">
+    <tbody><tr>
+      <td align="center" valign="top">
+<table width="90%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:6px;">
+        <tbody><tr>
+          <td height="32" align="center" style="font-size:18px;line-height:32px;"><strong>XDans最好用的博客网-CSS格式化和CSS压缩</strong></td>
+        </tr>
+	<tr>
+		<td height="1" background="./CSS整理工具-CSS代码格式化工具_files/dot_line.gif"></td>
+	</tr>
+</tbody></table>
+
+<div align="center"> 
+  <font size="3"><b> /*请将CSS代码复制到下面*/</b></font><br>
+    <textarea id="code" t="" style="WIDTH: 700px; HEIGHT: 300px">/*请将CSS代码复制到这里，下面是示例*/body{margin: 0;padding: 0;color: #000000;font: 12px Arial,sans-serif,"宋体","黑体";background: url(default/skin.gif) repeat-x;padding-top: 8px;}
+a{text-decoration: none;}
+a: link{color: #444444;}
+a: visited{color: #444444;}
+a: hover{color: #DC143C;text-decoration: underline;}
+a: active{color: #444444;text-decoration: underline;}
+ul{list-style-type: none;list-style-position : outside;margin: 0 0 0 0;padding: 0 0 0 0;word-break: break-all;}
+li{margin: 0 0 0 0;padding: 0 0 0 0;}
+p{margin: 0 0 0 0;padding: 0 0 0 0;word-break: break-all;}
+img{border: 0;}</textarea>
+    <br>
+    <br>
+    <input onclick="$(&#39;code&#39;).value = CSSdecode($(&#39;code&#39;).value);" type="button" value="格式化">
+    | 
+    <input onclick="$(&#39;code&#39;).value = CSSencode($(&#39;code&#39;).value);" type="button" value="压缩化">
+    | 
+    <input onclick="$(&#39;code&#39;).value = &#39;&#39;" type="button" value="清空">
+<br>
+<br>
+</div>
+
+</td>
+      </tr>
+  </tbody></table>
+
+	</div>
+	</div>
+	<div class="bl"></div>
+	<div class="br"></div>
+	<div class="bm"></div>
+</div>
+</td>
+  </tr>
+</tbody></table>
+<script language="JavaScript"> 
+<!-- 
+function $() { 
+  var elements = new Array(); 
+  for (var i = 0; i < arguments.length; i++) { 
+  var element = arguments[i]; 
+  if (typeof element == 'string') 
+    element = document.getElementById(element); 
+  if (arguments.length == 1)  
+    return element;    
+  elements.push(element); 
+  }    
+  return elements; 
+} 
+function CSSencode(code) 
+{ 
+ code = code.replace(/\n/ig,''); 
+ code = code.replace(/(\s){2,}/ig,'$1'); 
+ code = code.replace(/\t/ig,''); 
+ code = code.replace(/\n\}/ig,'\}'); 
+ code = code.replace(/\n\{\s*/ig,'\{'); 
+ code = code.replace(/(\S)\s*\}/ig,'$1\}'); 
+ code = code.replace(/(\S)\s*\{/ig,'$1\{'); 
+ code = code.replace(/\{\s*(\S)/ig,'\{$1'); 
+ return code; 
+} 
+function CSSdecode(code) 
+{ 
+ code = code.replace(/(\s){2,}/ig,'$1'); 
+ code = code.replace(/(\S)\s*\{/ig,'$1 {'); 
+ code = code.replace(/\*\/(.[^\}\{]*)}/ig,'\*\/\n$1}'); 
+ code = code.replace(/\/\*/ig,'\n\/\*'); 
+ code = code.replace(/;\s*(\S)/ig,';\n\t$1'); 
+ code = code.replace(/\}\s*(\S)/ig,'\}\n$1'); 
+ code = code.replace(/\n\s*\}/ig,'\n\}'); 
+ code = code.replace(/\{\s*(\S)/ig,'\{\n\t$1'); 
+ code = code.replace(/(\S)\s*\*\//ig,'$1\*\/'); 
+ code = code.replace(/\*\/\s*([^\}\{]\S)/ig,'\*\/\n\t$1'); 
+ code = code.replace(/(\S)\}/ig,'$1\n\}'); 
+ code = code.replace(/(\n){2,}/ig,'\n'); 
+ code = code.replace(/:/ig,': '); 
+ code = code.replace(/  /ig,' '); 
+ return code; 
+} 
+//--> 
+</script>
+
+
+
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=373213" src="./CSS整理工具-CSS代码格式化工具_files/bds_s_v2.js"></script>
+<script type="text/javascript">
+	document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+</script>
+
+</div>
+</body>
+</html>

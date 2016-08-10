@@ -1,0 +1,11 @@
+本差距为基于emlog驱动的外链插件——links_go
+作者：独狼
+
+
+使用说明如下
+*****************************************
+首先将压缩包下的go.php放置您的Emlog根目录下
+其次将以下代码存入到.htaccess实现伪静态
+RewriteCond %{REQUEST_FILENAME}/go/ !-f
+RewriteCond %{REQUEST_FILENAME}/go/ !-d
+RewriteRule ^go/([^/]+) /go.php?go=$1 [L]

@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery横向图片手风琴插件DEMO演示</title>
+
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () {
+    $(".nav_item").removeClass("active");
+    $("#nav_index").addClass("active");
+
+    var $centerwell_first = $('#centerwell li:first');
+    $centerwell_first.animate({ width: '545px' }, 300);
+    $centerwell_first.find('h3').addClass("on");
+
+    $('#centerwell li').click(function () {
+        if (!$(this).is(':animated')) {
+            $(this).animate({ width: '545px' }, 300).siblings().animate({ width: '100px' }, 300);
+
+            $('#centerwell li h3').removeClass("on");
+            $(this).find("h3").addClass("on");
+        }
+    });
+});
+</script>
+
+</head>
+<body>
+
+<div class="box2">
+	<div class="banner_tit">动漫人物</div>
+	<div class="hot_role">
+		<ul id="centerwell">
+			<li>
+				<h3><img alt="神崎·H·亚里亚" src="images/20141226132540254074.jpg"></h3>
+				<div class="hot_content">
+					<div class="hot_left"><a href="#"><img alt="神崎·H·亚里亚" class="img_box" src="images/w_2014100614085185182.jpg"></a></div>
+					<div class="hot_top">
+						<dl class="hot_line">
+							<dd>
+								<div class="t16 yahei">
+									<span><a href="#">神崎·H·亚里亚</a></span>
+									<span class="role_fen ml15">8.9</span>
+								</div>
+								<div class="mt10"><span class="bold">性别：</span><span class="color444">女</span></div>
+								<div class="mt5">
+									<span class="bold">属性：</span>
+									<span class="color444">
+										<a href="#" class="mr7">长发</a>
+										<a href="#" class="mr7">傲娇</a>
+										<a href="#" class="mr7">贫RU</a>
+										<a href="#" class="mr7">双马尾</a>
+										<a href="#" class="mr7">枪械少女</a>
+										<a href="#" class="mr7">萝莉</a>
+										<a href="#" class="mr7">虎牙</a>
+									</span>
+								</div>
+								<div class="mt5"><span class="bold">动漫：</span><span class="color444"><a href="#">《绯弹的亚里亚》</a></span></div>
+								<div class="mt5"><span class="bold">地区：</span><span class="color444"><a>日本</a></span></div>
+							</dd>
+							<div class="clear"></div>
+						</dl>
+					</div>
+					<div class="clear"></div>
+					<div class="mt10">
+						<span class="bold">动漫人物介绍：</span>
+						<span class="color444">动漫作品《绯弹的亚里亚》中的女主角，英国著名侦探夏洛克·福尔摩斯的后裔，福尔摩斯四世。在第七卷可得知出生日为9月23日。没有遗传到祖先优秀推理能力的她，被家族视为废物。但性格不服输又自尊极强的亚里亚，凭借自身天生的战斗感及努力，在英国武侦界闯出了名气</span>
+						<span class="ml20"><a href="#">详情&gt;&gt;</a></span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h3><img alt="黑子哲也" src="images/20141212205639563966.jpg"></h3>
+				<div class="hot_content">
+					<div class="hot_left"><a href="#"><img alt="黑子哲也" class="img_box" src="images/w_20141006135756575615.jpg"></a></div>
+					<div class="hot_top">
+						<dl class="hot_line">
+							<dd>
+								<div class="t16 yahei">
+									<span><a href="#">神崎·H·亚里亚</a></span>
+									<span class="role_fen ml15">8.9</span>
+								</div>
+								<div class="mt10"><span class="bold">性别：</span><span class="color444">女</span></div>
+								<div class="mt5">
+									<span class="bold">属性：</span>
+									<span class="color444">
+										<a href="#" class="mr7">长发</a>
+										<a href="#" class="mr7">傲娇</a>
+										<a href="#" class="mr7">贫RU</a>
+										<a href="#" class="mr7">双马尾</a>
+										<a href="#" class="mr7">枪械少女</a>
+										<a href="#" class="mr7">萝莉</a>
+										<a href="#" class="mr7">虎牙</a>
+									</span>
+								</div>
+								<div class="mt5"><span class="bold">动漫：</span><span class="color444"><a href="#">《绯弹的亚里亚》</a></span></div>
+								<div class="mt5"><span class="bold">地区：</span><span class="color444"><a>日本</a></span></div>
+							</dd>
+							<div class="clear"></div>
+						</dl>
+					</div>
+					<div class="clear"></div>
+					<div class="mt10">
+						<span class="bold">动漫人物介绍：</span>
+						<span class="color444">动漫作品《绯弹的亚里亚》中的女主角，英国著名侦探夏洛克·福尔摩斯的后裔，福尔摩斯四世。在第七卷可得知出生日为9月23日。没有遗传到祖先优秀推理能力的她，被家族视为废物。但性格不服输又自尊极强的亚里亚，凭借自身天生的战斗感及努力，在英国武侦界闯出了名气</span>
+						<span class="ml20"><a href="#">详情&gt;&gt;</a></span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h3><img alt="东乡美森" src="images/20141203132722272255.jpg"></h3>
+				<div class="hot_content">
+					<div class="hot_left"><a href="#"><img alt="东乡美森" class="img_box" src="images/w_20141204135621562190.jpg"></a></div>
+					<div class="hot_top">
+						<dl class="hot_line">
+							<dd>
+								<div class="t16 yahei">
+									<span><a href="#">神崎·H·亚里亚</a></span>
+									<span class="role_fen ml15">8.9</span>
+								</div>
+								<div class="mt10"><span class="bold">性别：</span><span class="color444">女</span></div>
+								<div class="mt5">
+									<span class="bold">属性：</span>
+									<span class="color444">
+										<a href="#" class="mr7">长发</a>
+										<a href="#" class="mr7">傲娇</a>
+										<a href="#" class="mr7">贫RU</a>
+										<a href="#" class="mr7">双马尾</a>
+										<a href="#" class="mr7">枪械少女</a>
+										<a href="#" class="mr7">萝莉</a>
+										<a href="#" class="mr7">虎牙</a>
+									</span>
+								</div>
+								<div class="mt5"><span class="bold">动漫：</span><span class="color444"><a href="#">《绯弹的亚里亚》</a></span></div>
+								<div class="mt5"><span class="bold">地区：</span><span class="color444"><a>日本</a></span></div>
+							</dd>
+							<div class="clear"></div>
+						</dl>
+					</div>
+					<div class="clear"></div>
+					<div class="mt10">
+						<span class="bold">动漫人物介绍：</span>
+						<span class="color444">动漫作品《绯弹的亚里亚》中的女主角，英国著名侦探夏洛克·福尔摩斯的后裔，福尔摩斯四世。在第七卷可得知出生日为9月23日。没有遗传到祖先优秀推理能力的她，被家族视为废物。但性格不服输又自尊极强的亚里亚，凭借自身天生的战斗感及努力，在英国武侦界闯出了名气</span>
+						<span class="ml20"><a href="#">详情&gt;&gt;</a></span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h3><img alt="长门有希" src="images/20141109103459345940.jpg"></h3>
+				<div class="hot_content">
+					<div class="hot_left"><a href="#"><img alt="长门有希" class="img_box" src="images/w_20141103131840184098.jpg"></a></div>
+					<div class="hot_top">
+						<dl class="hot_line">
+							<dd>
+								<div class="t16 yahei">
+									<span><a href="#">神崎·H·亚里亚</a></span>
+									<span class="role_fen ml15">8.9</span>
+								</div>
+								<div class="mt10"><span class="bold">性别：</span><span class="color444">女</span></div>
+								<div class="mt5">
+									<span class="bold">属性：</span>
+									<span class="color444">
+										<a href="#" class="mr7">长发</a>
+										<a href="#" class="mr7">傲娇</a>
+										<a href="#" class="mr7">贫RU</a>
+										<a href="#" class="mr7">双马尾</a>
+										<a href="#" class="mr7">枪械少女</a>
+										<a href="#" class="mr7">萝莉</a>
+										<a href="#" class="mr7">虎牙</a>
+									</span>
+								</div>
+								<div class="mt5"><span class="bold">动漫：</span><span class="color444"><a href="#">《绯弹的亚里亚》</a></span></div>
+								<div class="mt5"><span class="bold">地区：</span><span class="color444"><a>日本</a></span></div>
+							</dd>
+							<div class="clear"></div>
+						</dl>
+					</div>
+					<div class="clear"></div>
+					<div class="mt10">
+						<span class="bold">动漫人物介绍：</span>
+						<span class="color444">动漫作品《绯弹的亚里亚》中的女主角，英国著名侦探夏洛克·福尔摩斯的后裔，福尔摩斯四世。在第七卷可得知出生日为9月23日。没有遗传到祖先优秀推理能力的她，被家族视为废物。但性格不服输又自尊极强的亚里亚，凭借自身天生的战斗感及努力，在英国武侦界闯出了名气</span>
+						<span class="ml20"><a href="#">详情&gt;&gt;</a></span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h3><img alt="蒙奇·D·路飞" src="images/2014070607210321370.jpg"></h3>
+				<div class="hot_content">
+					<div class="hot_left"><a href="#"><img alt="蒙奇·D·路飞" class="img_box" src="images/w_2014100614182218227.jpg"></a></div>
+					<div class="hot_top">
+						<dl class="hot_line">
+							<dd>
+								<div class="t16 yahei">
+									<span><a href="#">神崎·H·亚里亚</a></span>
+									<span class="role_fen ml15">8.9</span>
+								</div>
+								<div class="mt10"><span class="bold">性别：</span><span class="color444">女</span></div>
+								<div class="mt5">
+									<span class="bold">属性：</span>
+									<span class="color444">
+										<a href="#" class="mr7">长发</a>
+										<a href="#" class="mr7">傲娇</a>
+										<a href="#" class="mr7">贫RU</a>
+										<a href="#" class="mr7">双马尾</a>
+										<a href="#" class="mr7">枪械少女</a>
+										<a href="#" class="mr7">萝莉</a>
+										<a href="#" class="mr7">虎牙</a>
+									</span>
+								</div>
+								<div class="mt5"><span class="bold">动漫：</span><span class="color444"><a href="#">《绯弹的亚里亚》</a></span></div>
+								<div class="mt5"><span class="bold">地区：</span><span class="color444"><a>日本</a></span></div>
+							</dd>
+							<div class="clear"></div>
+						</dl>
+					</div>
+					<div class="clear"></div>
+					<div class="mt10">
+						<span class="bold">动漫人物介绍：</span>
+						<span class="color444">动漫作品《绯弹的亚里亚》中的女主角，英国著名侦探夏洛克·福尔摩斯的后裔，福尔摩斯四世。在第七卷可得知出生日为9月23日。没有遗传到祖先优秀推理能力的她，被家族视为废物。但性格不服输又自尊极强的亚里亚，凭借自身天生的战斗感及努力，在英国武侦界闯出了名气</span>
+						<span class="ml20"><a href="#">详情&gt;&gt;</a></span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h3><img alt="东兔角" src="images/2014070607310131167.jpg"></h3>
+				<div class="hot_content">
+					<div class="hot_left"><a href="#"><img alt="东兔角" class="img_box" src="images/w_2014100614051151165.jpg"></a></div>
+					<div class="hot_top">
+						<dl class="hot_line">
+							<dd>
+								<div class="t16 yahei">
+									<span><a href="#">神崎·H·亚里亚</a></span>
+									<span class="role_fen ml15">8.9</span>
+								</div>
+								<div class="mt10"><span class="bold">性别：</span><span class="color444">女</span></div>
+								<div class="mt5">
+									<span class="bold">属性：</span>
+									<span class="color444">
+										<a href="#" class="mr7">长发</a>
+										<a href="#" class="mr7">傲娇</a>
+										<a href="#" class="mr7">贫RU</a>
+										<a href="#" class="mr7">双马尾</a>
+										<a href="#" class="mr7">枪械少女</a>
+										<a href="#" class="mr7">萝莉</a>
+										<a href="#" class="mr7">虎牙</a>
+									</span>
+								</div>
+								<div class="mt5"><span class="bold">动漫：</span><span class="color444"><a href="#">《绯弹的亚里亚》</a></span></div>
+								<div class="mt5"><span class="bold">地区：</span><span class="color444"><a>日本</a></span></div>
+							</dd>
+							<div class="clear"></div>
+						</dl>
+					</div>
+					<div class="clear"></div>
+					<div class="mt10">
+						<span class="bold">动漫人物介绍：</span>
+						<span class="color444">动漫作品《绯弹的亚里亚》中的女主角，英国著名侦探夏洛克·福尔摩斯的后裔，福尔摩斯四世。在第七卷可得知出生日为9月23日。没有遗传到祖先优秀推理能力的她，被家族视为废物。但性格不服输又自尊极强的亚里亚，凭借自身天生的战斗感及努力，在英国武侦界闯出了名气</span>
+						<span class="ml20"><a href="#">详情&gt;&gt;</a></span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div style="text-align:center;clear:both;">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+</body>
+</html>

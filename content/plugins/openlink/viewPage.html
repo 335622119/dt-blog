@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="/content/plugins/openlink/css/style_kj.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/content/plugins/openlink/js/com.dahuotu.jsTool.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            var _url = getQueryStringByName('url');
+            $("#iframeView").attr('src', _url);
+        });
+    
+    </script>
+</head>
+<body>
+    <div id="header" class="kj_top">
+        <div style="width: 980px; margin: 0 auto">
+            <p class="right">
+                <a href="javascript:void();" onclick="AddFavorite(window.location,document.title)">我要收藏</a>
+            </p>
+            <p>
+            </p>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <div id="container" style="overflow: hidden;">
+        <iframe border="0" id="iframeView" src="#" frameborder="0" height="100%" width="100%"
+            style="height: 640px;"></iframe>
+    </div>
+    <div id="footer" class="kj_bottom">
+        <div style="width: 980px; margin: 0 auto">
+            <p class="left">
+                <div class="bdsharebuttonbox">
+                    <a href="#" class="bds_more" data-cmd="more">分享到：</a><a href="#" class="bds_qzone"
+                        data-cmd="qzone" title="分享到QQ空间">QQ空间</a><a href="#" class="bds_tsina" data-cmd="tsina"
+                            title="分享到新浪微博">新浪微博</a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a><a
+                                href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a><a href="#" class="bds_weixin"
+                                    data-cmd="weixin" title="分享到微信">微信</a></div>
+                <script>                    window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "24" }, "share": { "bdSize": 16} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+            </p>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font-size:16px;font-family:'Microsoft Yahei',"微软雅黑",arial,"宋体",sans-serif;line-height:20px;background:url("../images/animebg.jpg") repeat scroll 50% 50% rgba(0, 0, 0, 0);}
+
+a{outline:none;color:#099;}
+a:active{star:expression(this.onFocus=this.blur());color:#E61736;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;color:#E61736;}
+.clear{clear:both;height:0px;line-height:0px;margin:0 auto;font-size:1px;}
+
+.t16{font-size:16px;}
+.ml15{margin-left:15px;}
+.mt10{margin-top:10px;}
+.bold{font-weight:bold;}
+.color444{color:#444444;}
+.mt5{margin-top:5px;}
+
+.box2{ background:none repeat scroll 0 0 #FFFFFF;overflow:hidden;border:1px solid #d4d2d2;width:1050px;margin:40px auto 0 auto;}
+.main{clear:both;margin:0 auto;text-align:left;width:1050px;overflow:hidden;}
+.banner_tit{border-bottom:1px solid #ebebeb;line-height:45px;font-family:"微软雅黑";font-size:18px;height:45px;padding-left:20px;position:relative;color:#222222;}
+.role_fen{color:#FF4500;font-size:24px;font-family:Brush Script MT;}
+
+.hot_role{width:1050px;overflow:hidden;}
+#centerwell{position:relative;height:300px;margin:0;padding:0;background:#FFFFFF;overflow:hidden;width:1055px;}
+#centerwell li{position:relative;width:100px;height:300px;float:left;border-right:#3d464e 1px solid;background:white;overflow:hidden;}
+#centerwell h3{position:absolute;top:0;left:0;margin:0;width:100px;height:300px;background-color:#000000;position:relative;cursor:pointer;}
+#centerwell .hot_content{position:absolute;left:115px;top:15px;width:415px;color:#5f5f5f;font-size:15px;line-height:18px;font-family:GeogrotesqueMedium, Helvetica, Arial, sans-serif;letter-spacing:0pt;}
+#centerwell h3 img{filter:alpha(opacity=30);opacity:0.3;float:left;width:100px;height:300px;}
+#centerwell h3.on img{filter:alpha(opacity=100);opacity:1;}
+#centerwell h3 .hot_title{display:block;position:absolute;z-index:10;left:0;bottom:0;width:72px;height:177px;color:#FFFFFF;text-align:center;}
+#centerwell h3.on .hot_title{display:none;}
+.hot_content .hot_left{float:left;}
+.img_box{border:1px solid #000000;}
+.hot_left img{height:170px;width:130px;}
+.hot_content .hot_top{float:right;}
+.hot_top dl{position:relative;}
+.hot_top dl dt{float:left;}
+.img_box{border:1px solid #000000;}
+.hot_top dl dd{float:left;line-height:21px;padding-left:10px;width:260px;padding-right:10px;}

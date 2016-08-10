@@ -1,0 +1,69 @@
+#main .left {float: left;	width: 140px;	margin: 0px 5px 0px 0px;background:none;display: inline; height: auto;}
+#main .color {border: 1px solid #009933;	padding: 10px;}
+#main .color table {	width: 100%;	text-align: center;}
+#main .color td {	border: 1px solid #ccc;	padding: 5px;	font-size: 14px;}
+#main .colorpicker {	border: 1px solid #009933;	padding: 10px;}
+#main .colorpicker table {	text-align: center;	margin: 5px auto;}
+#main .colorpicker td {	width: 22px;	height: 18px;	border: 1px solid #000;	cursor: pointer;}
+#main  .textarea {width:98%;border: 1px solid #EB8F00;	height: 220px;	resize: vertical;	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);	-webkit-border-radius: 4px;	-moz-border-radius: 4px;	border-radius: 4px;left:10px;right:10px;}
+.left .alert {	padding-right: 2px}
+.left .alert h2 {	font-size: 18px;	margin: 0 0 3px 0;	color: #222;}
+.left .alert ul, .left .alert ol {	margin: 0 0 10px 3px;}
+.left .alert li {	color: #404040;	list-style-type: none;	background-image: url(/images/public/arrow.gif);	background-repeat: no-repeat;	background-position: 0 .5em;	padding: 0 0 0 12px;	line-height: 18px;}
+/*#main .middle {margin-left:150px; } */
+#main .middle {margin-left:10px;}
+#main .left .left_slide{position:fixed;left:142px;top:250px;}
+#main #FileUploadView {width:300px;height:220px;position: absolute;top:-10px;right:70px;z-index: 100;padding: 10px; text-align: center;border:solid 1px #666;background: #fff;}
+#main #FileUploadView div{position:relative;top:-5px;}
+#main #web_url_input {position:absolute;left:200px; right:200px;z-index: 100;}
+
+/*以下为convertd div定义*/
+#main #convertd {overflow: auto;}
+#main #convertd  div span.py {padding: 5px;}
+#main #convertd .py{font-style: normal; font-size:18pt; color:#0000FF;}
+#main #convertd .font{font-style: normal; font-size:14pt; color:#000;}
+#main #convertd ul li {float:left; margin: 5px;text-align: center;}
+
+#main fieldset {padding:10px 5px;}
+
+div.table {padding:20px;color:#000;text-align: left;background: #fff;}
+div.table table{width:95%;text-align: center;}
+div.table thead{background:#eee;text-align: center;}
+div.table h3{border-bottom: 1px solid #333;}
+div.table th{font-weight: blod;}
+div.table td,th{border:1px solid #ccc;padding: 8px;text-align: left;}
+
+#main .test {background: #000;}
+#main .test li{float: left; width:200px; background: #333; color:#F2F1DD; border: 1px solid #333;font-size:14px; margin:10px 5px; padding:8px 10px;overflow:hidden;text-indent: 20px;white-space: nowrap;text-overflow: ellipsis;font-family: 'Droid Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;background-image: url(/images/public/cross.png);background-position: 10px 50%;background-repeat: no-repeat;}
+#main .test h1{clear:both;border-bottom:1px solid #ccc;margin: 20px; color:#fff;}
+#main .test ul {padding-left: 50px;margin-top:20px;}
+.testok{background-image: url(/images/public/tick.png);background-position: 10px 50%;background-repeat: no-repeat;}
+
+#main #selector-tests .txs{border: 0;background-color: transparent; color:#fff;}
+#main #selector-tests li[id^='css3_begin'] {background-image: url(/images/public/tick.png);}
+#main #selector-tests li[id$='_ends'] {background-image: url(/images/public/tick.png);}
+#main #selector-tests li[id*="_matches"] {background-image: url(/images/public/tick.png);}
+:root #main #selector-tests #css3_root  {background-image: url(/images/public/tick.png);}
+#main #selector-tests li:nth-child(5) {background-image: url(/images/public/tick.png);}
+#main #selector-tests li:nth-last-child(16) {background-image: url(/images/public/tick.png);}
+#main #selector-tests li:nth-of-type(7) {background-image: url(/images/public/tick.png);}
+#main #selector-tests div.css3_nth_last_of_type li:nth-last-of-type(1) {background-image: url(/images/public/tick.png);}
+#main #selector-tests div.css3-test-last-child li:last-child {background-image: url(/images/public/tick.png);}
+#main #selector-tests div.css3_first_of_type li:first-of-type {background-image: url(/images/public/tick.png);}
+#main #selector-tests div.css3_last_of_type  li:last-of-type  {background-image: url(/images/public/tick.png);}
+#main #selector-tests div.css3_only_child  li:only-child  {background-image: url(/images/public/tick.png);}
+#main #selector-tests div.css3_only_of_type  li:only-of-type  {background-image: url(/images/public/tick.png);}
+#main #selector-tests li.css3_not:not(code) {background-image: url(/images/public/tick.png);}
+
+#main #selector-tests li.css3_empty  em:empty  {height:10px;}
+:target #main .test li.css3_target {background-image: url(/images/public/tick.png);}
+#main #selector-tests #css3_enabled input:enabled {height:10px;}
+#main #selector-tests #css3_disabled input:disabled {height:10px;}
+#main #selector-tests #css3_checked input:checked {height:10px;}
+#main #selector-tests li.css3_general_sibling span ~ em {height:10px;}
+
+#main #selector-tests li.css3_e_child_f > em {height:10px;}
+
+#main  .mail24{background-image:url(/images/public/24mail.png);background-repeat: no-repeat; height: 60px;}
+.reset li {list-style:decimal; margin-left: 20px;}
+.reset li span {margin-left:20px; color:#006600; }

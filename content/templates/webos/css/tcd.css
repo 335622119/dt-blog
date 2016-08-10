@@ -1,0 +1,27 @@
+.cd {position: fixed;
+left: 10px;
+z-index: 9999;
+top: 10px;
+color: #fff;
+background: #666666;
+padding:15px;
+font-size: 18px;
+line-height: 17px;}
+.cd:hover{color:#fff}
+.dropdown a {color:#fff;padding: 13px 13px 13px 9px;
+display: block;font-size:16px;}
+.dropdown a:hover,.dropdown a:focus {background:#666666}
+.dropdown {position: fixed;
+z-index: 9999;
+top: 10px;
+left: 56px;
+background: #666666;
+list-style: none;
+min-width: 100px;
+text-align: center;display:none}
+.dropdown.active {display:block}
+
+.post-like{text-align:center;padding:10px}
+.post-like a{ background-color:#21759B;border-radius: 3px;color: #FFFFFF;font-size: 12px;padding: 5px 10px;text-decoration: none;outline:none}
+.post-like a.done, .post-like a:hover{background-color:#eee;color:#21759B;}    
+.post-like a.done{cursor:not-allowed}

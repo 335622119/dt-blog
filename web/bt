@@ -1,0 +1,59 @@
+<?php
+
+$a=$_GET['q'];
+$page=$_GET['n'];
+
+if(!isset($page)){
+	$page=0;
+}
+$url="http://brisk.eu.org/api/magnet.php?q=".urlencode($a)."&n=".$page;
+$curl=curl_init();
+curl_setopt($curl,CURLOPT_URL,$url);
+curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
+$data=curl_exec($curl);
+curl_close($curl);
+ 
+$json=json_decode($data);
+echo "<head><meta http-equiv='content-type' content='text/html;charset=utf-8'></head>";
+echo "<style>a{text-decoration:none;color:red;}a:hover{text-decoration:none;color:red}</style>";
+echo "<body style='font-size:12px;'>";
+echo "<h3>宅男必备神器！ 马上收藏我吧 By:XDans</h3>";
+echo "热门搜索："."<a href='bt.php?q=美女图片'>美女图片</a>&nbsp<a href='bt.php?q=苍井空'>苍老师</a>&nbsp<a href='bt.php?q=泷泽萝拉'>泷泽萝拉</a>&nbsp<a href='bt.php?q=宅男福利'>宅男福利</a>";
+echo "<form action='bt.php' method='GET'>";
+echo "<input type='text' name='q'>";
+echo "<input type='submit' value='嘿咻嘿咻'>";
+echo "</form>";
+
+for ($i=1; $i <= 60 ; $i++) { 
+	echo "<a href='bt.php?q=$a&n=$i'><button>$i</button></a>";
+}
+echo "<br /><br /><hr>";
+for($i=0;$i != count($json);++$i)
+{
+ echo "<a style='text-decoration:none;' href='".$json[$i]->{'magnet'}."'><font style='color:red'>".$json[$i]->{'title'}."</font></a><br>";
+ echo "<font style='color:#A0522D;font-size:10px;'>".$json[$i]->{'magnet'}."</font><br>";
+ echo "<b><font style='color:#006400'>大小:" .$json[$i]->{'size'}."</font></b><br>";
+ echo '文件数: '.$json[$i]->{'files'}."<br>";
+ echo '下载数: '.$json[$i]->{'downloads'}."<br>";
+ echo '添加时间: '.$json[$i]->{'addtime'}."<br>";
+ echo "<font style='color:#FF4500'>发现时间:".$json[$i]->{'update'}."</font><br>";
+ echo '虚假种子: '.$json[$i]->{'fake'}."<br><hr><br>";
+}
+
+echo "<form action='bt.php' method='GET'>";
+echo "<input type='text' name='q'>";
+echo "<input type='submit' value='嘿咻嘿咻'>";
+echo "</form>";
+
+for ($i=1; $i <= 60 ; $i++) { 
+	echo "<a href='bt.php?q=$a&n=$i'><button>$i</button></a>";
+}
+echo "</body>";
+
+//echo "<script>function url(){window.location.href}</script>"
+ function p($arr){
+ 	echo "<pre>";
+ 	echo print_r($arr);
+ 	echo "</pre>";
+ }
+?>

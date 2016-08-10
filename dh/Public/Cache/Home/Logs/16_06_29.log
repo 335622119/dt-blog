@@ -1,0 +1,40 @@
+[ 2016-06-29T08:46:57+08:00 ] 61.149.182.106 /dh/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000518s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001913s ]
+SQL: SHOW COLUMNS FROM `cc_tags` [ RunTime:0.006345s ]
+SQL: SELECT tags.id,tags.name,tags.alias,tags_type.icon,tags_type.id AS tags_type_id FROM cc_tags tags INNER JOIN cc_tags_type tags_type ON tags.id=tags_type.tags_id WHERE tags_type.type=2 AND tags_type.tags_pid=0 ORDER BY tags_type.sort_order DESC [ RunTime:0.001711s ]
+SQL: SHOW COLUMNS FROM `cc_link` [ RunTime:0.001071s ]
+SQL: SELECT * FROM `cc_link` ORDER BY sort_order DESC  [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: setting /data/home/qxu1141780211/htdocs/dh/Home/Lib/Action/CommonAction.class.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1141780211/htdocs/dh/Home/Lib/Action/CommonAction.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cc_item` [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `cc_tags_type` [ RunTime:0.000877s ]
+SQL: SELECT tags.id,tags.name,tags.alias FROM cc_tags_type tags_type INNER JOIN cc_tags tags ON tags_type.tags_id=tags.id WHERE tags_type.tags_pid=1 ORDER BY tags_type.sort_order DESC,tags.id ASC [ RunTime:0.000641s ]
+SQL: SELECT item.title,item.url,item.icon,item.description,item.is_hot FROM cc_item item INNER JOIN cc_tags_relationship tags_relationship ON item.id=tags_relationship.item_id WHERE item.status=1 AND tags_relationship.tags_type_id=1 ORDER BY item.sort_order DESC,item.id ASC LIMIT 100 [ RunTime:0.001635s ]
+SQL: SELECT tags.id,tags.name,tags.alias FROM cc_tags_type tags_type INNER JOIN cc_tags tags ON tags_type.tags_id=tags.id WHERE tags_type.tags_pid=2 ORDER BY tags_type.sort_order DESC,tags.id ASC [ RunTime:0.000593s ]
+SQL: SELECT item.title,item.url,item.icon,item.description,item.is_hot FROM cc_item item INNER JOIN cc_tags_relationship tags_relationship ON item.id=tags_relationship.item_id WHERE item.status=1 AND tags_relationship.tags_type_id=2 ORDER BY item.sort_order DESC,item.id ASC LIMIT 100 [ RunTime:0.001110s ]
+SQL: SELECT tags.id,tags.name,tags.alias FROM cc_tags_type tags_type INNER JOIN cc_tags tags ON tags_type.tags_id=tags.id WHERE tags_type.tags_pid=3 ORDER BY tags_type.sort_order DESC,tags.id ASC [ RunTime:0.000585s ]
+SQL: SELECT item.title,item.url,item.icon,item.description,item.is_hot FROM cc_item item INNER JOIN cc_tags_relationship tags_relationship ON item.id=tags_relationship.item_id WHERE item.status=1 AND tags_relationship.tags_type_id=3 ORDER BY item.sort_order DESC,item.id ASC LIMIT 100 [ RunTime:0.000995s ]
+NOTIC: [8] Undefined variable: tags /data/home/qxu1141780211/htdocs/dh/Home/Lib/Action/IndexAction.class.php 第 42 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: kw /data/home/qxu1141780211/htdocs/dh/Public/Cache/Home/Cache/71dd44981c432497b93df8298e17de70.php 第 49 行.
+NOTIC: [8] Undefined variable: actionName /data/home/qxu1141780211/htdocs/dh/Public/Cache/Home/Cache/71dd44981c432497b93df8298e17de70.php 第 63 行.
+NOTIC: [8] Undefined variable: actionName /data/home/qxu1141780211/htdocs/dh/Public/Cache/Home/Cache/71dd44981c432497b93df8298e17de70.php 第 63 行.
+NOTIC: [8] Undefined variable: actionName /data/home/qxu1141780211/htdocs/dh/Public/Cache/Home/Cache/71dd44981c432497b93df8298e17de70.php 第 63 行.
+SQL: SHOW COLUMNS FROM `cc_advert` [ RunTime:0.001155s ]
+SQL: SELECT * FROM `cc_advert` WHERE ( status=1 ) ORDER BY sort_order desc  [ RunTime:0.000514s ]
+SQL: SELECT `id`,`title`,`url`,`icon`,`logo`,`description` FROM `cc_item` WHERE ( status=1 AND logo!='' ) ORDER BY is_hot desc,sort_order desc,id asc LIMIT 27   [ RunTime:0.000770s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023510s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000624s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000415s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001957s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000566s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000608s ]
+

@@ -1,0 +1,221 @@
+/*
+Style Name:X-Black
+Author:无名智者
+Url:http://zhizhe8.net
+*/
+* {
+    font-family: "微软雅黑","Microsoft YaHei","华文细黑","STSONG",Trebuchet MS,Arial,Verdana,Tahoma,"DejaVu Sans","Liberation sans","Bitstream Vera Sans",sans-serif;
+}
+a:hover {
+color: #ff6600 !important;
+text-decoration:none;
+}
+.des {
+	background: #F0F0F0 !important;
+}
+#menu_tpl a {
+	background: url(./icon/tmp.png) no-repeat 20px 1px;
+}
+#menu_data a {
+	background: url(./icon/data.png) no-repeat 20px 1px;
+}
+
+#menu_user a {
+	background: url(./icon/user.png) no-repeat 20px 1px;
+}
+
+#menu_tpl a {
+	background: url(./icon/tmp.png) no-repeat 20px 1px;
+}
+#menu_log a {
+	background: url(./icon/log.png) no-repeat 20px 1px;
+}
+#menu_page a {
+	background: url(./icon/page.png) no-repeat 20px 1px;
+}
+#menu_link a {
+	background: url(./icon/link.png) no-repeat 20px 1px;
+}
+
+#menu_tag a {
+	background: url(./icon/tag.png) no-repeat 20px 1px;
+}
+#menu_cm a {
+	background: url(./icon/cm.png) no-repeat 20px 1px;
+}
+#menu_navbar a {
+	background: url(./icon/navbar.png) no-repeat 20px 1px;
+}
+#menu_sort a {
+	background: url(./icon/sort.png) no-repeat 20px 1px;
+}
+#menu_tw a {
+	background: url(./icon/t.gif) no-repeat 20px 1px;
+}
+#menu_widget a {
+	background: url(./icon/widget.png) no-repeat 15px 1px;
+}
+*/
+a:link, a:visited {
+color: #6f6f6f;
+text-decoration:none;
+}
+a:link, a:visited {
+color: #6f6f6f;
+text-decoration:none;
+}
+a:hover, a:focus {
+color: #2a6496;
+text-decoration:none;
+}
+#header a{color:#FFF; text-decoration:none}
+#header a:hover{color:#CCC; text-decoration:none}
+#header{
+    background:url(./images/top_mid.png) repeat-x;
+    color:#FFFFFF;
+    height:40px;
+    margin-bottom:10px;
+    border-radius: 6px 6px 6px 6px;
+}
+#header_left{
+    width:11px;
+    height:40px;
+    float:left;
+}
+#header_right{
+    width:11px;
+    height:40px;
+    float:right;
+}
+#header_title a{
+	font-size: 15px !important;
+}
+#header_logo a{
+    text-indent:-9999px;
+    height:40px;
+    width:168px;
+    background:url(./images/logo.png) no-repeat;
+    display:block;
+    outline: none;
+    float:left;
+}
+#header_title{
+    float:left;
+    width:486px;
+    padding:8px 0px 0px 15px;
+}
+#header_menu{
+	padding:9px 10px 0px 0px;
+	float:right;
+}
+#header_menu span{margin: 0px 6px;color:#F1F1F1;}
+#header_menu img{border:1px #FFFFFF solid;}
+/*侧边栏*/
+#side{
+    background-position:left top;
+    background-image:url(./images/sidebar_bg.gif);width:114px;
+    background-repeat:repeat-y;
+    text-align:center;
+    float:left;
+}
+#side a{
+    color:#333;
+    text-decoration:none;
+    display:block;
+}
+#side a:hover{
+    color:#6bb044;
+    text-decoration:none;
+}
+#side a:active{
+    text-decoration:none;
+    padding:1px 0px 0px 1px;
+}
+#sidebartop{
+    background:url(./images/sidebar_bg_t.gif) no-repeat;
+    width:114px;
+    font-size:4px;
+    height:4px;
+}
+.actived,.error {
+	border: 1px #CCCCCC solid !important;
+} 
+.actived {
+	background: url(../../images/icon_succ.gif) no-repeat 10px #F0F0F0 !important;
+}
+.error {
+	background: url(../../images/icon_error.gif) no-repeat 10px #F0F0F0 !important;
+}
+#sidebarBottom{
+    font-size:5px;
+    background:url(./images/sidebar_bg_b.gif) no-repeat bottom;
+    width:114px;height:5px}
+#side .notice_number{
+    background: url(./images/coment_numbg.gif) no-repeat 1px 1px;font-size:9px;position: relative;
+    margin-top:-32px;
+    height:30px;
+    width:20px;
+    float:right;
+    margin-right:20px;
+    _margin-right:10px;
+}
+#side .notice_number a ,#sidebar .notice_number a:hover{
+    color:#FFFFFF;
+    height:20px;
+    font-weight:bold;
+}
+.sidebarmenu{
+    background:url(./images/sidebar_bg_a.png) center no-repeat;
+    width:114px;
+    padding-top:4px;
+    letter-spacing:0.2em;
+    height:24px;
+    cursor:pointer;
+}
+.sidebarsubmenu{
+    background:rgba(199, 199, 199, 0.21) repeat-x;;
+    width:104px;
+    padding-top:3px;height:22px;margin:auto;
+}
+.sidebarsubmenu1{
+    background: rgb(196, 196, 196) repeat-x;
+    width:103px;
+    padding-top:3px;
+    height:22px;
+    margin:auto;
+    border-radius: 3px 3px 3px 3px;
+}
+.wmzzb {
+	background: #000000;
+}
+.page{text-align:center; margin:10px 0px}
+.page span{background-color: #000000; color:#FFF; padding:3px 6px; border-radius: 4px;}
+.page a{background-color: #838383; color:#FFF; padding:1px 5px;border-radius: 4px;}
+input[type=text],input[type=password],input[type=search],input[type=email],input[type=number],textarea,select,.input {
+	background: #FFF !important;
+	border: 1px solid #D9D9D6 !important;
+	padding: 3px !important;
+	border-radius: 2px !important;
+}
+input[type=button],input[type=submit],button {
+vertical-align: middle;
+overflow: hidden;
+margin-right: 3px;
+padding: 1px 7px 1px 7px;
+height: 23px;
+border: 1px solid #999;
+background: #e5e5e5 url(./images/button.png) repeat-x 0 0;
+cursor: pointer;
+-moz-box-shadow: 0 1px 0 #e5e5e5;
+-webkit-box-shadow: 0 1px 0 #e5e5e5;
+box-shadow: 0 1px 0 #e5e5e5;
+min-height: 25px;
+min-width: 40px;
+}
+input[type=button]:active,input[type=submit]:active,button:active {
+background-position: 0 -23px;
+}
+#admindex div h3 {
+    border-radius: 5px 5px 5px 5px;
+    background: #e5e5e5 repeat-x !important;
+}

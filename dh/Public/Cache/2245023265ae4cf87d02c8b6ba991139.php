@@ -1,0 +1,3 @@
+<?php
+//000008640000a:18:{s:5:"title";s:28:"段彤’s Blog 网址导航";s:8:"keywords";s:134:"前端设计，UI设计，网页设计，素材下载，设计师网站导航，设计师网址导航，设计导航，设计师导航";s:4:"logo";s:25:"/201606/5770bd1c17e49.png";s:11:"description";s:93:"设计师，Web工程师，创业者的网址导航，行业领域精英人士必备利器。";s:9:"sub_title";s:65:"IT行业精英人士必备导航，一站在手，天下我有！";s:6:"footer";s:51:"Copyright © 2016 www.0ddt.com All Rights Reserved ";s:13:"DEFAULT_THEME";s:5:"Black";s:5:"width";s:4:"1200";s:9:"URL_MODEL";s:1:"1";s:5:"theme";s:5:"Black";s:13:"item_hot_show";s:1:"1";s:12:"item_hot_num";s:2:"27";s:19:"recommend_img_width";s:3:"100";s:12:"category_num";s:3:"100";s:25:"category_show_description";s:1:"1";s:9:"slideshow";s:1:"1";s:7:"sidenav";s:1:"1";s:6:"qrcode";s:0:"";}
+?>

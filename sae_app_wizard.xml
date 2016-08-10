@@ -1,0 +1,7 @@
+<appwizard><introduction><name></name><author>net909@163.com</author><icon></icon><homepage></homepage><description><![CDATA[]]></description></introduction><platform><services><service></service><service name="emlog"  params="数据存储">Storage</service><service>Mysql</service><service>kvdb</service></services><appconfig><tpl><![CDATA[
+name: <<appname>>
+version: <<version>>
+version: 1
+...
+
+]]></tpl></appconfig></platform><code><initScript>/saeinstall.php</initScript></code></appwizard>

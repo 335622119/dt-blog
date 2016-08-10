@@ -1,0 +1,1 @@
+<?php exit;//a:5:{i:0;a:2:{s:3:"gid";i:70;s:5:"title";s:38:"总结 XSS 与 CSRF 两种跨站攻击";}i:1;a:2:{s:3:"gid";i:69;s:5:"title";s:35:"wooyun.org 乌云漏洞平台源码";}i:2;a:2:{s:3:"gid";i:68;s:5:"title";s:36:"Pupy – 全平台远程控制工具";}i:3;a:2:{s:3:"gid";i:67;s:5:"title";s:84:"xss平台源码（邮件提醒，飞信短信提醒，短网址，Bootstrap框架）";}i:4;a:2:{s:3:"gid";i:66;s:5:"title";s:24:"常见上传绕过总汇";}}

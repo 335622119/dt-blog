@@ -1,0 +1,1 @@
+a:8:{s:10:"time_limit";i:10;s:12:"need_chinese";i:1;s:9:"blacklist";a:1:{i:0;s:0:"";}s:14:"auto_blacklist";i:0;s:11:"max_attempt";i:10;s:8:"keywords";s:42:"<a href=*>*</a>|[url=*]*[/url]|fuck|段彤";s:13:"name_keywords";s:13:"段彤|段彤";s:12:"url_keywords";a:1:{i:0;s:0:"";}}

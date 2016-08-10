@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery扁平化风格的对话框插件Dialogbox DEMO演示</title>
+<link rel="stylesheet" href="jquery.dialogbox-1.0.css">
+</head>
+
+<body>
+<center>
+<h1>jQuery Dialogbox Plugin Examples</h1>
+<!-- Buttons -->
+<br><br>
+<button id="normal">Normal Message</button>
+<button id="success">Success Message</button>
+<button id="warning">Warning Message</button>
+<button id="error">Error Message</button>
+<br><br>
+<button id="yes_no">Yes/No Question</button>
+<button id="ok_cancel">OK/Cancel Question</button>
+<button id="retry_ignore_abort">Retry/Ignore/Abort Question</button>
+<br><br>
+<button id="text">Text Prompt</button>
+<button id="select">Select Prompt</button>
+<br><br>
+<!-- Scripts -->
+</center>
+<script src="jquery.js"></script>
+<script src="jquery.dialogbox-1.0.js"></script>
+<script>
+    $(document).ready(function(){
+        //*********************************************************************************
+        // Normal Message
+        $("#normal").click(function() {
+            $('body').dialogbox({type:"normal",title:"Message",message:"html5tricks"});
+        });
+        // Success Message
+        $("#success").click(function() {
+            $('body').dialogbox({type:"success",title:"Success",message:"html5tricks"});
+        });
+        // Warning Message
+        $("#warning").click(function() {
+            $('body').dialogbox({type:"warning",title:"Warning",message:"It's a warning!"});
+        });
+        // Error Message
+        $("#error").click(function() {
+            $('body').dialogbox({type:"error",title:"Error",message:"It's an error!"});
+        });
+        //*********************************************************************************
+        // Yes/No Question
+        $("#yes_no").click(function() {
+            $('body').dialogbox({type:"yes/no",title:"Yes No Question",message:"Your question..."},function($btn){
+                if($btn == "yes") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Yes"});
+                }
+                else if($btn == "no") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: No"});
+                }
+                else if($btn == "close") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Close"});
+                }
+            });
+        });
+        // OK/Cancel Question
+        $("#ok_cancel").click(function() {
+            $('body').dialogbox({type:"ok/cancel",title:"OK Cancel Question",message:"Your question..."},function($btn){
+                if($btn == "ok") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Ok"});
+                }
+                else if($btn == "cancel") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Cancel"});
+                }
+                else if($btn == "close") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Close"});
+                }
+            });
+        });
+        // Retry/Ignore/Abort Question
+        $("#retry_ignore_abort").click(function() {
+            $('body').dialogbox({type:"retry/ignore/abort",title:"Retry Ignore Abort Question",message:"Your question..."},function($btn){
+                if($btn == "retry") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Retry"});
+                }
+                else if($btn == "ignore") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Ignore"});
+                }
+                else if($btn == "abort") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Abort"});
+                }
+                else if($btn == "close") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Close"});
+                }
+            });
+        });
+        //*********************************************************************************
+        // Text Prompt
+        $("#text").click(function() {
+            $('body').dialogbox({type:"text",title:"Text Prompt",message:"Your question..."},function($btn,$ans){
+                if($btn == "close") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Close"});
+                }
+                else if($btn == "ok") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You entered: " + $ans});
+                }
+            });
+        });
+        // Select Prompt
+        $("#select").click(function() {
+            $('body').dialogbox({type:"select",title:"Text Prompt",message:"Your question...",options:"Opt1,Opt2,Opt3"},function($btn,$ans){
+                if($btn == "close") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You pressed: Close"});
+                }
+                else if($btn == "ok") {
+                    $('body').dialogbox({type:"normal",title:"Result",message:"You entered: " + $ans});
+                }
+            });
+        });
+    });
+</script>
+<!-- The End -->
+
+<div style="text-align:center;clear:both;">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+</body>
+</html>
